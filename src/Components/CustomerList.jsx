@@ -6,7 +6,7 @@ const CustomerList = ({ setSelectedCustomer }) => {
     const [filter, setFilter] = useState("");
 
     useEffect(() => {
-        axios.get('https://raw.githubusercontent.com/KimoMo7amed/test/main/db.json')
+        axios.get('https://kimomo7amed.github.io/api/db.json')
             .then(response => setCustomers(response.data));
         
     }, []);
