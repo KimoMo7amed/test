@@ -7,7 +7,7 @@ const TransactionChart = ({ customer }) => {
 
     useEffect(() => {
         if (customer) {
-            axios.get(`http://localhost:3001/transactions?customer_id=${customer.id}`)
+            axios.get(`https://raw.githubusercontent.com/KimoMo7amed/test/main/db.json?customer_id=${customer.id}`)
                 .then(response => setTransactions(response.data));
         }
     }, [customer]);
